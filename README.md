@@ -100,7 +100,43 @@ Disadvantages of Private  Repositories in Collaborative Projects.
 2. Requires careful management of access permissions.
 
 ## Detail the steps involved in making your first commit to a GitHub repository. What are commits, and how do they help in tracking changes and managing different versions of your project?
+1. If you don't have one already, sign up for a free account at https://github.com/.
 
+2. Navigate to the repository you want to contribute to. Click the "Fork" button in the top right corner. This creates a copy of the repository under your account.
+
+3. Open a terminal or command prompt. Use the git clone command to clone your forked repository to your local machine.  Replace your_username and repository_name with your actual GitHub username and the repository's name:
+
+git clone https://github.com/your_username/repository_name.git
+
+4. Navigate to the cloned repository's directory in your terminal. Create a new branch for your changes: 
+
+git branch your_branch_name
+
+Switch to the newly created branch: 
+
+git checkout your_branch_name
+
+5. Edit the files you want to modify and save your changes.
+
+6. Use git add to stage the files you've modified:
+
+git add filename1 filename2
+
+To stage all changes in the current directory:
+
+git add .
+
+7. Use git commit to commit your changes with a descriptive message:
+
+git commit -m "Your commit message here"
+
+8. Push your branch to your forked repository on GitHub:
+
+git push origin your_branch_name
+
+9. Go to your forked repository on GitHub. Click the "Pull Request" button. Follow the instructions to create a pull request to the original repository.
+
+A commit is a snapshot of your project's working directory at a specific point in time, taken by a specific author. Commits provide a way to track the history of your project, see what has changed, revert to previous versions, work on different features independently, and collaborate with others effectively.
 ## How does branching work in Git, and why is it an important feature for collaborative development on GitHub? Discuss the process of creating, using, and merging branches in a typical workflow.
 
 ## Explore the role of pull requests in the GitHub workflow. How do they facilitate code review and collaboration, and what are the typical steps involved in creating and merging a pull request?
